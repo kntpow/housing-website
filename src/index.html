@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Housing Finder</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Housing Finder</h1>
+    <p>Find a home that fits your budget</p>
+</header>
+
+<main>
+    <h2>Available Houses</h2>
+
+    <div class="house-container">
+
+        <!-- House 1 -->
+        <div class="house-card">
+            <h3>Green Valley Apartment</h3>
+            <p>Location: Mangaluru</p>
+            <p>2 BHK | Near College Road</p>
+            <h2>₹8,000/month</h2>
+            <p>Applications left: <span id="count1">12</span></p>
+            <button onclick="applyHouse(1)">Apply Now</button>
+        </div>
+
+        <!-- House 2 -->
+        <div class="house-card">
+            <h3>Sunrise Residency</h3>
+            <p>Location: Mangaluru</p>
+            <p>1 BHK | Near Bus Stand</p>
+            <h2>₹5,500/month</h2>
+            <p>Applications left: <span id="count2">8</span></p>
+            <button onclick="applyHouse(2)">Apply Now</button>
+        </div>
+
+        <!-- House 3 -->
+        <div class="house-card">
+            <h3>City Comfort Homes</h3>
+            <p>Location: Mangaluru</p>
+            <p>3 BHK | Near Market</p>
+            <h2>₹12,000/month</h2>
+            <p>Applications left: <span id="count3">5</span></p>
+            <button onclick="applyHouse(3)">Apply Now</button>
+        </div>
+
+    </div>
+
+    <section class="documents">
+        <h2>Documents Required</h2>
+        <ul>
+            <li>Aadhaar card or other accepted ID proof</li>
+            <li>Address proof</li>
+            <li>Income proof or salary slip</li>
+            <li>Recent passport-size photograph</li>
+        </ul>
+        <p>Please verify the actual requirements with the housing provider.</p>
+    </section>
+
+    <!-- Application form -->
+    <section id="applicationForm" class="form-box">
+        <h2>Housing Application</h2>
+        <p id="selectedHouse"></p>
+
+        <form id="myForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <button type="submit">Submit Application</button>
+            <button type="button" onclick="closeForm()">Cancel</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+</main>
+
+<footer>
+    <p>Housing Finder | Student Project</p>
+</footer>
+
+<!-- Connect JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

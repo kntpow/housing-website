@@ -1,0 +1,110 @@
+
+/* Basic page design */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #333;
+}
+
+/* Top section */
+header {
+    background-color: #176b5b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main content */
+main {
+    padding: 25px;
+}
+
+/* House cards layout */
+.house-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual house card */
+.house-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    box-shadow: 0 3px 8px #cccccc;
+}
+
+/* House price */
+.house-card h2 {
+    color: #176b5b;
+}
+
+/* Buttons */
+button {
+    background-color: #176b5b;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #104c41;
+}
+
+/* Documents section */
+.documents {
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Application form */
+.form-box {
+    display: none;
+    background-color: white;
+    padding: 25px;
+    margin-top: 30px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #cccccc;
+}
+
+/* Form fields */
+input {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Bottom section */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #dddddd;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    .house-card {
+        width: 100%;
+    }
+}
